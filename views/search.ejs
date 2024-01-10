@@ -1,0 +1,9 @@
+<input class="search">
+<button class="search-send">검색</button> 
+
+<script>
+    document.querySelector('.search-send').addEventListener('click', function(){
+        var val = document.querySelector('.search').value
+        location.href = '/search?val=' + val;
+    })
+</script>
